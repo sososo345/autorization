@@ -1,16 +1,16 @@
 // your code goes here
+document.getElementById("enterbutton").addEventListener('click',function(){
+    alert('')
 
-const answbut = document.GetElementById("enterbutton")
-answbut.addEventListener('click', function(){
-    const login = document.GetElementById("login")
-    const password = document.GetElementById("password")
-    const loginanswer = "taburetka"
-    const passwordanswer = "goida"
-    const messageP = document.GetElementById("message")
+
+
+    const login = document.getElementById("login");
+    const password = document.getElementById("password");
+    const messageP = document.getElementById("message");
     
-    if (login.value === loginanswer&& password.value===passwordanswer){
+    if (login.value == "taburetka"|| password.value=="goida"){
         messageP.textContent = "успешно"
-    }else (login.value === loginanswer&& password.value===passwordanswer){
+    }else (){
         messageP.textContent = "неверный логин или пароль"
     }
-});
+)};
